@@ -1,0 +1,10 @@
+{
+  "appId": "com.wintozo.spidi",
+  "appName": "Spidi Кликер",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "android": {
+    "appId": "com.wintozo.spidi",
+    "appName": "Spidi Кликер"
+  }
+}
