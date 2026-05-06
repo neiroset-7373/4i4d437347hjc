@@ -73,9 +73,9 @@ class MainActivity : AppCompatActivity() {
     )
 
     private val wallpapers = listOf(
-        R.drawable.wallpaper_1,
+        R.drawable.wallpeper_1,
         R.drawable.wallpaper_2,
-        R.drawable.wallpaper_3,
+        R.drawable.wallpeper_3,
         R.drawable.wallpaper_4,
         R.drawable.wallpaper_5,
         R.drawable.wallpaper_6,
@@ -176,10 +176,7 @@ class MainActivity : AppCompatActivity() {
     private fun playClickSound() {
         if (musicEnabled) {
             try {
-                val clickSound = MediaPlayer.create(this, R.raw.click)
-                clickSound.setVolume(musicVolume, musicVolume)
-                clickSound.start()
-                clickSound.setOnCompletionListener { it.release() }
+                mediaPlayer?.setVolume(musicVolume, musicVolume)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
